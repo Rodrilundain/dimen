@@ -25,7 +25,8 @@ body {
 	height: 100px;
 	max-width: 100%;
 	margin: 0 auto;
-	display: block:#13314E;;
+	display: block;
+	box-sizing: border-box;
 }
 
 #logo {
