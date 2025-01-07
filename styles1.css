@@ -1,138 +1,154 @@
 /* General styles */
 body {
-	padding: 0;
-	margin: 0;
-	font-family: Roboto;
-	font-weight: 400;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 .roboto-regular {
-	font-family: "Roboto", sans-serif;
-	font-weight: 100;
-	font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 #cont {
-	width: 100%;
-	height: 100px;
-	max-width: 100%;
-	margin: 0 auto;
-	background-color: #093764;
+    width: 100%;
+    background-color: #093764;
 }
 
 #cont-nav {
-	width: 1366px;
-	height: 100px;
-	max-width: 100%;
-	margin: 0 auto;
-	display: block;
-	box-sizing: border-box;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100px;
+    box-sizing: border-box;
 }
 
 #logo {
-	width: 100%;
-	padding: 0;
-	border: none;
-	float: left;
-	margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Asegura la separación máxima entre la imagen y la lista */
+    width: 100%;
+}
+
+#logo img {
+    flex-shrink: 0; /* Asegura que la imagen no se reduzca */
+    margin-right: 20px; /* Espaciado entre la imagen y la lista */
 }
 
 #lista ul {
-	list-style: none;
-	display: inline;
-	padding: 0px;
-	margin: 0px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 60px;
 }
 
 #lista ul li a {
-	text-decoration: none;
-	float: right;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-top: 20px;
-	font-size: 13px;
-	color: #ffffff;
-	transition: color 0.3s ease;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f3e8e8;
+    transition: color 0.3s ease;
 }
 
 /* Change color to red on hover */
 #lista ul li a:hover {
-	color: red;
+    color: red;
 }
 
+/* Banner section */
 .slide {
-	width: 100%;
-	height: 500px;
-	margin: auto;
-	padding: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
 #cont-tit-bnr {
-	padding: 0px;
-	margin: 0 auto;
-	margin-top: 0px;
-	width: 1366px;
-	height: 100%;
-	background-repeat: no-repeat;
+    margin-top: 0px;
+    padding: 20px;
+    text-align: center;
 }
 
-#tit-uno {
-	font-size: 80px;
-	font-weight: 500;
-	color: #cc0404;
-	margin-top: -250px;
-	margin-left: 285px;
+#tit-uno, #subtit {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(230, 237, 241);
+    margin: 0;
+    text-align: center;
 }
 
-#subtit {
-	font-size: 80px;
-	font-weight: 500;
-	color: #df0a0a;
-	margin-top: -70px;
-	margin-left: 285px;
-}
-
+/* Content styles */
 #content {
-	padding: 10px;
-	margin-top: 20px;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .titulos h1 {
-	width: 1366px;
-	height: 80px;
-	margin: auto;
-	text-align: center;
-	font-size: 40px;
-	color: hsl(0, 87%, 45%);
+    text-align: center;
+    font-size: 40px;
+    color: hsl(0, 6%, 90%);
+    text-align: center;
 }
 
+/* Icons container */
 .ContIcons {
-	width: 1366px;
-	height: auto;
-	overflow: auto;
-	margin: auto;
-	padding: 10px 5px 5px 5px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas por fila en pantallas grandes */
+    gap: 20px;
+    padding: 10px;
 }
 
 .icon {
-	width: 445px;
-	height: 300px;
-	padding: 0px;
-	margin: 0 5px 2px 5px;
-	color: #e2001a;
-	text-align: center;
-	float: left;
-	display: inline-block;
+    text-align: center;
+    color: #e2001a;
 }
 
+/* Ajuste de tamaño fijo para los íconos */
+.icon img {
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: contain; /* Mantiene las proporciones de la imagen dentro del contenedor */
+}
+
+/* Estilo de los enlaces */
 .icon a {
-	color: #13314E;
-	font-size: 15px;
-	text-decoration: none;
-	transition: color 0.3s ease;
+    color: #e6ebf0;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 /* Change link color to red on hover */
 .icon a:hover {
-	color: red;
+    color: red;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+    .ContIcons {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
+    }
+}
+
+@media (max-width: 768px) {
+    .ContIcons {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+    }
+}
+
+@media (max-width: 480px) {
+    .ContIcons {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila */
+    }
+}
+
+@media (max-width: 320px) {
+    .ContIcons {
+        grid-template-columns: 1fr; /* 1 columna por fila */
+    }
 }
