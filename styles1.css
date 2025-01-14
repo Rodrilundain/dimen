@@ -152,3 +152,6 @@ body {
         grid-template-columns: 1fr; /* 1 columna por fila */
     }
 }
+.icon img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+    border-color: red; /* Cambiar el color del borde al pasar el mouse */
