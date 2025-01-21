@@ -164,3 +164,17 @@ body {
 .icon img:hover {
     transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
     border-color: red; /* Cambiar el color del borde al pasar el mouse */
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .icon {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
