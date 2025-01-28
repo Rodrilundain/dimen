@@ -177,3 +177,19 @@ body {
         flex: 1 1 calc(50% - 20px);
     }
 }
+    .icon-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los dos íconos */
+    margin: 20px 0; /* Separación superior e inferior */
+}
+
+.icon-group .icon {
+    text-align: center; /* Centra el texto debajo de cada ícono */
+}
+
+.icon-group img {
+    display: block;
+    margin: 0 auto; /* Centra las imágenes */
+}
