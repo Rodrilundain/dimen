@@ -1,0 +1,195 @@
+/* General styles */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#cont {
+    width: 100%;
+    background-color: #093764;
+}
+
+#cont-nav {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Asegura la separación máxima entre la imagen y la lista */
+    width: 100%;
+}
+
+#logo img {
+    flex-shrink: 0; /* Asegura que la imagen no se reduzca */
+    margin-right: 20px; /* Espaciado entre la imagen y la lista */
+}
+
+#lista ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 60px;
+}
+
+#lista ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #f3e8e8;
+    transition: color 0.3s ease;
+}
+
+/* Change color to red on hover */
+#lista ul li a:hover {
+    color: red;
+}
+
+/* Banner section */
+.slide {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#cont-tit-bnr {
+    margin-top: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+#tit-uno, #subtit {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(230, 237, 241);
+    margin: 0;
+    text-align: center;
+}
+
+/* Content styles */
+#content {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.titulos h1 {
+    text-align: center;
+    font-size: 40px;
+    color: hsl(0, 6%, 90%);
+    text-align: center;
+}
+
+/* Icons container */
+.ContIcons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas por fila en pantallas grandes */
+    gap: 20px;
+    padding: 10px;
+}
+
+.icon {
+    text-align: center;
+    color: #e2001a;
+}
+
+/* Ajuste de tamaño fijo para los íconos */
+.icon img {
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: contain; /* Mantiene las proporciones de la imagen dentro del contenedor */
+}
+
+/* Estilo de los enlaces */
+.icon a {
+    color: #e6ebf0;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Change link color to red on hover */
+.icon a:hover {
+    color: red;
+}
+
+
+/* Botones */
+.icon img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+    
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+    .ContIcons {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
+    }
+}
+
+@media (max-width: 768px) {
+    .ContIcons {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+    }
+}
+
+@media (max-width: 480px) {
+    .ContIcons {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila */
+    }
+}
+
+@media (max-width: 320px) {
+    .ContIcons {
+        grid-template-columns: 1fr; /* 1 columna por fila */
+    }
+}
+.icon img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+    border-color: red; /* Cambiar el color del borde al pasar el mouse */
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .icon {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+    .icon-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los dos íconos */
+    margin: 20px 0; /* Separación superior e inferior */
+}
+
+.icon-group .icon {
+    text-align: center; /* Centra el texto debajo de cada ícono */
+}
+
+.icon-group img {
+    display: block;
+    margin: 0 auto; /* Centra las imágenes */
+}
