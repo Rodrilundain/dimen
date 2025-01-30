@@ -1,77 +1,174 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel de Gestión</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
+<html>
+	<head>
 
-        .contenedor {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
+		<link rel="stylesheet" href="styles1.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<title>DIMENSIONAMIENTO </title>
+		<link rel="icon" type="image/svg" href="img/FavIcon.svg">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .item {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            flex: 1 1 calc(16.66% - 10px); /* 6 por fila en pantallas grandes */
-            min-width: 150px;
-        }
+	</head>
+	<body>
 
-        /* Ajustes para pantallas más pequeñas */
-        @media (max-width: 1200px) {
-            .item {
-                flex: 1 1 calc(25% - 10px); /* 4 por fila */
-            }
-        }
+		<div id="cont">
+			<!-- Comienza Cabecera con navegacion-->
 
-        @media (max-width: 900px) {
-            .item {
-                flex: 1 1 calc(33.33% - 10px); /* 3 por fila */
-            }
-        }
+			<div id="cont-nav">
 
-        @media (max-width: 600px) {
-            .item {
-                flex: 1 1 calc(50% - 10px); /* 2 por fila */
-            }
-        }
+				<div id="nav">
+					<div id="logo">
+						<a href="https://x0gm2grdparxqfunszfavw.on.drv.tw/HTML.html/">
+							<img src="img/GrupoF.svg" width="170" height="42" alt="Grupo Fancar">
+						</a>
+						<div id="lista">
+							<ul>
+								<ul>
+    <li><a href="https://docs.google.com/spreadsheets/d/1ejkGOzmEcI0fO_zrpy6U3eam9_9bYFkWY2ghyf9zNWY/edit?gid=687941432#gid=687941432&range=A1" target="_blank" style="font-size: smaller;">SOLICITUDES DE LICENCIAS</a></li>
+    <li><a href="https://docs.google.com/spreadsheets/d/1ejkGOzmEcI0fO_zrpy6U3eam9_9bYFkWY2ghyf9zNWY/edit?gid=1978647648#gid=1978647648&range=A1" target="_blank" style="font-size: smaller;">SOLICITUDES DE ADELANTOS</a></li>
+    <li><a href="https://docs.google.com/spreadsheets/d/1ejkGOzmEcI0fO_zrpy6U3eam9_9bYFkWY2ghyf9zNWY/edit?gid=1602611398#gid=1602611398&range=A1" target="_blank" style="font-size: smaller;">LICENCIAS POR ESTUDIO</a></li>
+    <li><a href="https://docs.google.com/spreadsheets/d/1ejkGOzmEcI0fO_zrpy6U3eam9_9bYFkWY2ghyf9zNWY/edit?gid=1998691099#gid=1998691099&range=A1" target="_blank" style="font-size: smaller;">CAMBIO DE TURNO</a></li>
+    <li><a href="https://rodrilundain.github.io/index.callcenter/" style="font-size: smaller;">INTRANET</a></li>
+</ul>
 
-        @media (max-width: 400px) {
-            .item {
-                flex: 1 1 100%; /* 1 por fila en móviles */
-            }
-        }
-    </style>
-</head>
-<body>
+							</ul>
+						</div>
+					</div>
+				</div>
+			<!-- Finaliza Cabecera con navegacion-->	
 
-    <div class="contenedor">
-        <div class="item">Planilla de auditorías</div>
-        <div class="item">Acumulado de auditoría</div>
-        <div class="item">Usuarios y contraseñas</div>
-        <div class="item">Faltas y suspensiones</div>
-        <div class="item">Gestiones</div>
-        <div class="item">Reportes</div>
-        <div class="item">Calendario de licencias</div>
-        <div class="item">Flujo de organigrama</div>
-        <div class="item">Tareas</div>
-        <div class="item">Asana</div>
-        <div class="item">K.P.I</div>
-        <div class="item">Altas y bajas certificados médicos</div>
-        <div class="item">Formación de RAC</div>
-    </div>
+			</div>
+			<!-- Comienza Banner-->
+			<div class="slider">
 
-</body>
+				<div class="slide"> 
+					<a href="https://rodrilundain.github.io/index.callcenter/" target="_blank"><img src="img/CC 1.png" title="Home"></a>
+				</div>
+
+				<div id="cont-tit-bnr"></div>
+                <h1 id="tit-uno" style="color: rgb(242, 245, 247);">DIMENSIONAMIENTO</h1>
+                <h1 id="subtit" style="color: rgb(222, 232, 238);">CONTACT CENTER</h1>
+
+
+			</div>
+			<!-- Termina Banner-->
+
+			<div id="content">
+				<div class="ContIcons">
+
+					<div class="icon">
+
+							<a href="https://docs.google.com/spreadsheets/d/1ejkGOzmEcI0fO_zrpy6U3eam9_9bYFkWY2ghyf9zNWY/edit?gid=244931087#gid=244931087&range=D3" target="_self"><img src="img/VentasTel.png" width="100" height="180" title="PLANILLA DE AUDITORIA">
+
+						<p>Planilla de Auditoria</p></a>
+
+					</div>
+
+					<div class="icon">
+
+						<a href="https://docs.google.com/spreadsheets/d/1ejkGOzmEcI0fO_zrpy6U3eam9_9bYFkWY2ghyf9zNWY/edit?gid=1827293946#gid=1827293946&range=A1" target="_self"><img src="img/SalaReuniones.png" width="200" height="200" title="ACUMULADO DE AUDITORIA">
+
+						<p>Acumulado  De Auditoria</p></a>
+					</div>
+
+					<div class="icon">
+
+						<a href="https://docs.google.com/spreadsheets/d/1ejkGOzmEcI0fO_zrpy6U3eam9_9bYFkWY2ghyf9zNWY/edit?gid=658583221#gid=658583221&range=A1:H2" target="_self"><img src="img/Seguridad.png" width="200" height="200" title="Usuarios y Contraseñas">
+
+						<p>Usuarios y Contraseñas</p></a>
+
+					</div>
+
+					<div class="icon">
+
+						<a href="https://docs.google.com/spreadsheets/d/1ejkGOzmEcI0fO_zrpy6U3eam9_9bYFkWY2ghyf9zNWY/edit?gid=1952950121#gid=1952950121&range=A1" target="_self"><img src="img/RrHh.png" width="200" height="200" title="FALTAS Y SUSPENCIONES">
+
+						<p>Faltas y Suspenciones </p></a>
+
+					</div>
+					
+                                         <div class="icon">
+
+						<a href="https://drive.google.com/drive/folders/1aVLHRp3NutK0DraQLO6wCOE9pQvhzewd?usp=drive_link" target="_self"><img src="img/Armado.png" width="200" height="200" title="FALTAS Y SUSPENCIONES">
+						<p>Gestiones </p></a>
+					</div>
+					<div class="icon">
+
+						<a href="https://app.powerbi.com/groups/me/reports/2fd6f865-a43a-4e2e-b8b2-16400e7238e2/b03c1ff41b9f582b4b4c?experience=power-bi&bookmarkGuid=42acc799627f96cd8a8b" target="_self"><img src="img/AdmFinanzas.png" width="200" height="200" title="Reportes">
+
+						<p>Reportes</p></a>
+
+					</div>
+
+					<div class="icon">
+
+						<a href="https://docs.google.com/spreadsheets/d/1ejkGOzmEcI0fO_zrpy6U3eam9_9bYFkWY2ghyf9zNWY/edit?gid=103616781#gid=103616781&range=A1" target="_self"><img src="img/Comercial.png" width="200" height="200" title="Calendario de Licencias">
+
+						<p>Calendario de Lisencias</p></a>
+
+					</div>
+
+					<div class="icon">
+
+						<a href="https://drive.google.com/file/d/13BCE_P7L8x6028nB9N2g3UtEo0PbfnU9/view?usp=sharing" target="_self"><img src="img/Mantenimiento.png" width="200" height="200" title="Flujos y Organigrama">
+
+						<p>Flujos y Organigrama</p></a>
+
+					</div>
+
+					<div class="icon">
+
+						<a href="https://docs.google.com/spreadsheets/d/1LqoJg7AkjNM55CfgI1ETihshbSC7orFPQdQ0M4n125c/edit?gid=1692424211#gid=1692424211&range=A491:F491" target="_self"><img src="img/AdmFinanzas.png" width="200" height="200" title="Tareas">
+
+						<p>Tareas</p></a>
+
+					</div>
+
+					<div class="icon">
+
+						<a href="https://app.asana.com/0/home/1208672418351839" target="_self"><img src="img/CompComex.png" width="200" height="200" title="ASANA">
+
+						<p>Asana</p></a>
+
+					</div>
+
+					<div class="icon">
+
+						<a href="https://docs.google.com/spreadsheets/d/1LqoJg7AkjNM55CfgI1ETihshbSC7orFPQdQ0M4n125c/edit?usp=sharing" target="_self"><img src="img/VentasTel.png" width="200" height="200" title="K.P.I">
+
+						<p>K.P.I</p></a>
+
+					</div>
+
+					<div class="icon">
+
+						<a href="https://docs.google.com/spreadsheets/d/1ejkGOzmEcI0fO_zrpy6U3eam9_9bYFkWY2ghyf9zNWY/edit?gid=1003588448#gid=1003588448&range=A1" target="_self"><img src="img/Marketing.png" width="200" height="200" title="Altas y Bajas">
+
+						<p>Altas y Bajas</p></a>
+
+					</div>
+
+					<div class="icon">
+
+						<a href="https://drive.google.com/drive/folders/13m78kdQkouBGIAytPep171Rrx2Orygmi?usp=sharing" target="_self"><img src="img/PostVenta.png" width="200" height="200" title="Certificados Medicos">
+
+						<p>Certificados Medicos</p></a>
+
+						<a href="https://drive.google.com/drive/folders/1fq-hGm4PZDGGB39jgV0q0cb6PTRuvy6F?usp=drive_link" target="_self"><img src="img/Sistemas.png" width="200" height="200" title="Certificados Medicos">
+
+						<p>Formacion de RAC </p></a>
+
+					</div>
+
+					</div>
+
+				</div>
+		</div>	
+
+		</div>
+
+	</body>
 </html>
