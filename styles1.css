@@ -193,3 +193,13 @@ body {
     display: block;
     margin: 0 auto; /* Centra las imágenes */
 }
+/* Estilo para la lista de enlaces */
+ul.custom-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.custom-list li {
+    display: inline-block;
+    margin: 5px;
+}
