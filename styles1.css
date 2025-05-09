@@ -109,17 +109,15 @@ body {
 }
 
 .icon img {
-    width: 100px;
-    height: 100px;
+    width: 70px; /* antes 100px */
+    height: 70px; /* antes 100px */
     object-fit: contain;
 }
 
 .icon a {
-    color: #e6ebf0;
-    font-size: 15px;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 13px; /* antes 15px */
 }
+
 
 .icon a:hover {
     color: red;
