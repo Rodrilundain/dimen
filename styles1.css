@@ -109,13 +109,13 @@ body {
 }
 
 .icon img {
-    width: 70px; /* antes 100px */
-    height: 70px; /* antes 100px */
+    width: 90px; /* antes 100px */
+    height: 90px; /* antes 100px */
     object-fit: contain;
 }
 
 .icon a {
-    font-size: 13px; /* antes 15px */
+    font-size: 15px; /* antes 15px */
 }
 
 
