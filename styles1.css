@@ -1,123 +1,174 @@
-/* ------------- VARIABLES & RESET ------------------------------ */
+/* ---------------- VARIABLES & RESET -------------------------- */
 :root {
-  --color-bg: #093764;          /* Azul corporativo */
-  --color-text: #e6ebf0;        /* Texto claro */
-  --color-accent: #e2001a;      /* Rojo Fiancar */
+  --color-bg: #093764;           /* Azul corporativo */
+  --color-text: #e6ebf0;         /* Texto claro */
+  --color-accent: #e2001a;       /* Rojo Fiancar */
+  --color-card: #0e477e;         /* Fondo para tarjetas */
+  --color-hover: #133b63;
   --font-main: "Roboto", sans-serif;
 }
 
-* { margin:0; padding:0; box-sizing:border-box; }
-
-/* ------------- BASE ------------------------------------------- */
-body {
-  font-family: var(--font-main);
-  background: var(--color-bg);
-  color: var(--color-text);
-  line-height: 1.4;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ------------- HEADER & NAV ----------------------------------- */
+/* ---------------- BASE ---------------------------------------- */
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+/* ---------------- HEADER & NAV ------------------------------- */
 header#cont {
-  background:#093764;
-  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+  background-color: var(--color-bg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 #cont-nav {
-  max-width:1280px;
-  margin:auto;
-  padding:8px 16px;
-  display:flex;
-  align-items:center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav#lista .fila {
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  justify-content:center;
-  padding:12px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
 }
 
 nav#lista a {
-  background:var(--color-text);
-  color:var(--color-bg);
-  padding:6px 12px;
-  border-radius:4px;
-  font-weight:500;
-  text-decoration:none;
-  transition:background .2s ease;
+  background-color: #ffffff;
+  color: var(--color-bg);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 nav#lista a:hover {
-  background:var(--color-accent);
-  color:#fff;
+  background-color: var(--color-accent);
+  color: #ffffff;
 }
 
-/* ------------- SLIDER (BANNER) -------------------------------- */
-.slider { position:relative; overflow:hidden; }
-.slider img { width:100%; height:auto; display:block; }
+/* ---------------- SLIDER / BANNER ---------------------------- */
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-height: 60vh;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 #cont-tit-bnr {
-  position:absolute;
-  top:50%; left:50%;
-  transform:translate(-50%,-50%);
-  text-align:center;
-  color:#fff;
-  text-shadow:0 2px 6px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 
-#tit-uno { font-size:clamp(2rem,4vw,3rem); letter-spacing:3px; }
-#subtit { font-size:clamp(1.25rem,3vw,2rem); font-weight:300; }
+#tit-uno {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
 
-/* ------------- ICON GRID -------------------------------------- */
+#subtit {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 300;
+}
+
+/* ---------------- ICON GRID ---------------------------------- */
 .ContIcons {
-  max-width:1280px;
-  margin:40px auto;
-  display:flex;
-  flex-wrap:wrap;
-  gap:24px;
-  justify-content:center;
+  max-width: 1280px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-/* Tamaño adaptable: 8 columnas ≈ 12.5% menos gap */
 .icon {
-  flex:1 1 calc(12.5% - 24px);
-  min-width:120px;
-  max-width:160px;
-  text-align:center;
+  flex: 1 1 calc(12.5% - 30px);
+  min-width: 120px;
+  max-width: 180px;
+  text-align: center;
 }
 
 .icon a {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  background:rgba(255,255,255,0.08);
-  border-radius:12px;
-  padding:16px;
-  text-decoration:none;
-  transition:transform .2s ease, background .2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: var(--color-card);
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
 }
 
 .icon a:hover {
-  transform:translateY(-4px);                 /* Zoom vertical suave */
-  background:rgba(255,255,255,0.18);
+  transform: translateY(-6px);
+  background-color: var(--color-hover);
 }
 
-/* 🎯 NUEVO: cambia el color del texto a rojo al hacer hover */
 .icon a:hover p {
-  color:var(--color-accent);
+  color: var(--color-accent);
 }
 
-.icon img { width:64px; height:64px; object-fit:contain; margin-bottom:12px; }
+.icon img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 14px;
+  transition: transform 0.3s ease;
+}
+
+.icon a:hover img {
+  transform: scale(1.1);
+}
 
 .icon p {
-  color:#fff;
-  font-weight:500;
-  font-size:0.95rem;
-  transition:color .2s ease;                 /* Para un fade‑in elegante */
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-/* ------------- RESPONSIVE TWEAKS ------------------------------ */
-@media (max-width: 992px) { .icon { flex:1 1 calc(25% - 24px); } }
-@media (max-width: 768px) { .icon { flex:1 1 calc(33.333% - 24px); } }
-@media (max-width: 576px) { .icon { flex:1 1 calc(50% - 24px); } }
+/* ---------------- RESPONSIVE --------------------------------- */
+@media (max-width: 992px) {
+  .icon { flex: 1 1 calc(25% - 24px); }
+}
+
+@media (max-width: 768px) {
+  .icon { flex: 1 1 calc(33.333% - 24px); }
+}
+
+@media (max-width: 576px) {
+  .icon { flex: 1 1 calc(50% - 24px); }
+}
